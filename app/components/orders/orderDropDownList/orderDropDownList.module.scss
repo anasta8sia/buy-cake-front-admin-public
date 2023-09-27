@@ -1,0 +1,41 @@
+.dropdown {
+  position: relative;
+  display: flex;
+
+  &:hover {
+    .dropdown_content {
+      display: block;
+    }
+  }
+}
+
+.dropbtn {
+  background-color: white;
+  border: none;
+  color: #555555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+
+  &:hover {
+    display: flex;
+  }
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 130px;
+  background-color: white;
+  top: -10px;
+  left: 25px;
+  border: 1px solid;
+  border-left: none;
+  border-radius: 25px;
+}
+
+
+  

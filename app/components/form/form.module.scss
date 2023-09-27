@@ -1,0 +1,93 @@
+
+.form {
+  position: fixed;
+  width: 500px;
+  height: 300px;
+  top: calc(50% - 170px);
+  left: calc(50% - 248px);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+
+  label {
+    margin-top: -28px;
+    margin-left: 4px;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+ 
+  input {
+    margin-top: 50px;
+    height: 24px;
+    font: inherit;
+    font-size: 16px;
+    color: #555555;
+    outline: none;
+    cursor: pointer;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid #f48fff;
+  }
+
+  .inputLogin:focus~.placeholderLogin,
+  .inputLogin:not(:placeholder-shown)~.placeholderLogin,
+
+  .inputPassword:focus~.placeholderPassword,
+  .inputPassword:not(:placeholder-shown)~.placeholderPassword {
+
+    transform: translateY(-25px);
+  }
+
+
+  .inputLogin:focus~.placeholderLogin,
+  .inputLogin:not(:placeholder-shown)~.placeholderLogin,
+
+  .inputPassword:focus~.placeholderPassword,
+  .inputPassword:not(:placeholder-shown)~.placeholderPassword {
+
+    color: #f06aff;
+  }
+
+  button {
+    margin-top: 58px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 120px;
+    height: 45px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    padding-top: 2px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #d56cff, #b55dde, #d56cff);
+    box-shadow: 0px 5px 5px -5px #010101;
+    background-size: 200%;
+    transition: .5s ease;
+
+    &:hover {
+      background-position: right;
+    }
+  }
+}
+
+.form_error {
+  height: 20px;
+  font-size: 12px;
+  margin-top: 8px;
+}

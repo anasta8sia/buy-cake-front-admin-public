@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  color: #333333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.1s ease;
+
+  &.active,
+  &:hover {
+    color: #e700ff;
+  }
+}
+
+.cake_table_container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.filling_table {
+  th:nth-child(4) {
+    width: 60%;
+  }
+}
+
+.oredr_table {
+  th:nth-child(1) {
+    width: 5%;
+  }
+
+  th:nth-child(2) {
+    width: 10%;
+  }
+
+  th:nth-child(3) {
+    width: 15%;
+  }
+
+  th:nth-child(4) {
+    width: 15%;
+  }
+
+  th:nth-child(5) {
+    width: 25%;
+  }
+
+  th:nth-child(6) {
+    width: 25%;
+  }
+}
+
+.table_contanier {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+table {
+  width: 75%;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  th:nth-last-child(1) {
+    width: 3%;
+  }
+
+  td:nth-last-child(1) {
+    border-top: none;
+    border-right: none;
+  }
+}
+
+.header_contanier {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .heading {
+    color: #555555;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.pagination_container {
+  width: 75%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+
+  .page_pagination {
+    font-size: 13px;
+    color: #555555;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .previous_next {
+    font-size: 13px;
+    color: #555555;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 3px;
+
+    &:hover {
+      color: #e700ff;
+    }
+  }
+
+  .active_page {
+    color: #e700ff;
+  }
+}
+
+.search_btn_cake_container {
+  width: 68%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.search_btn_order_container {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid red;
+}
+
+.search_btn_container {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.dimmed-outside-wrapper {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-weight: 400;
+}

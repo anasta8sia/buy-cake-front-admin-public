@@ -1,0 +1,56 @@
+
+.container_btn_uploaded {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.info_uploaded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 165px;
+  height: 50px;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+.input_file {
+  position: relative;
+  display: flex;
+
+  div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid;
+    border-radius: 10px;
+    color: #555555;
+    background-color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    width: 165px;
+    height: 50px;
+    padding: 10px 20px;
+    margin-top: 60px;
+    transition: background-color 0.2s;
+    box-sizing: border-box;
+  }
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+}
+
+

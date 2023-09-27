@@ -1,0 +1,101 @@
+.form_update_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 670px;
+  height: 700px;
+  top: calc(50% - 350px);
+  left: calc(50% - 335px);
+  background-color: white;
+  border-radius: 5px;
+
+  h1 {
+    margin-left: 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #555555;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .form_update_data_info {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+
+    .form_update_data_heading {
+      font-weight: 600;
+    }
+  }
+}
+
+.form_update_fields {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  input {
+    height: 24px;
+    margin-top: 60px;
+    font: inherit;
+    font-size: 18px;
+    color: #555555;
+    outline: none;
+    cursor: pointer;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid #f48fff;
+  }
+
+  label {
+    margin-top: -28px;
+    font: inherit;
+    font-size: 18px;
+    color: #555555;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+}
+
+.inputName:focus~.placeholderName,
+.inputName:not(:placeholder-shown)~.placeholderName,
+
+.inputEmail:focus~.placeholderEmail,
+.inputEmail:not(:placeholder-shown)~.placeholderEmail,
+
+.inputMsg:focus~.placeholderMsg,
+.inputMsg:not(:placeholder-shown)~.placeholderMsg {
+
+  transform: translateY(-25px);
+  color: #f06aff;
+}
+
+.update_btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 75px;
+}
+
+.form_error {
+  height: 20px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.select_container {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+}

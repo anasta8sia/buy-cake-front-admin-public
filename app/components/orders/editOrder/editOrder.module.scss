@@ -1,0 +1,16 @@
+
+.edit_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.edit {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #555555;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
